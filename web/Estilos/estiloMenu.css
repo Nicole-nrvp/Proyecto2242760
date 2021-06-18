@@ -1,0 +1,38 @@
+*{
+	padding: 2px;
+	margin: 2px;
+	font-family: cursive;
+        
+}
+body {
+	background-color: #FADBD8;
+}
+
+[type="submit"]{
+	
+	align-items: center;
+	margin: 10px;
+	background-color: #F9EBEA ;
+	opacity: 0.8;
+	width: 150px;
+}
+
+.Botones{
+
+	margin: auto;
+ 	width: auto;
+ 	background-color:#F5CBA7  ;
+ 	opacity: 0.9;
+ 	border: 5px solid #EFF8F9 ;
+ 	border-radius: 1%;
+}
+
+.Fin{
+
+	margin: auto;
+ 	width: auto;
+ 	background-color:#F5CBA7  ;
+ 	opacity: 0.9;
+ 	border: 5px solid #EFF8F9 ;
+ 	border-radius: 1%;
+}

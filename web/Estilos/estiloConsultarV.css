@@ -1,0 +1,29 @@
+*{
+    padding: 2px;
+    margin: 2px;
+    font-family: cursive;
+
+}
+body {
+    background-color: #FADBD8;
+}
+
+button{
+    align-items: center;
+    margin: 10px;
+    background-color: #F9EBEA ;
+    opacity: 0.8;
+    width: 150px;
+}
+
+[type="submit"]{
+
+    align-items: center;
+    margin: 10px;
+    background-color: #F9EBEA ;
+    opacity: 0.8;
+    width: 150px;
+}
+.tabla{
+    background-color:#F5CBA7  ;   
+}

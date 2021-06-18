@@ -1,0 +1,39 @@
+*{
+    padding: 1px;
+    margin: 1px;
+    font-family: cursive;
+
+}
+body {
+    background-color: #FADBD8;
+}
+button{
+    align-items: center;
+    margin: 10px;
+    background-color: #F9EBEA ;
+    opacity: 0.8;
+    width: 150px;
+}
+
+h1{margin: 1%;}
+
+.conteInicio{
+    padding: 30px;
+    margin: 10%;
+    width: auto;
+    height: auto;
+    background-color:#F5CBA7  ;
+    opacity: 0.9;
+    border: 5px solid #EFF8F9 ;
+    border-radius: 1%;
+
+}
+.mensaje{
+    padding: 10px;
+    margin: 5%;
+    background-color:#FADBD8  ;
+    opacity: 0.9;
+    border: 5px solid #FADBD8 ;
+    border-radius: 1%;
+    color: #BA4A00;
+}
