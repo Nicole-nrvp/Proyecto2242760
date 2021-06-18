@@ -12,6 +12,7 @@
 <%@include file="Sesiones.jsp" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -31,9 +32,7 @@
                         <input type="text" name="textPlaca">
                         <br>
                         <br>
-                        
-                        <input type="hidden" name="textDatId" action="Datos" value="2" ><br>    
-                        
+                        <input type="hidden" name="textDatId" value="<%=datpVO.getDatId()%>" ><br>   
                         Categoria <br>
                         <select name="textCatId">
                             <option>Seleccione...</option>

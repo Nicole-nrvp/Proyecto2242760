@@ -210,7 +210,7 @@ public class DatosPDAO extends Conexión implements Crud {
 
         } finally {
             try {
-                this.cerrarConexión();
+                //this.cerrarConexión();
             } catch (Exception e) {
 
                 Logger.getLogger(DatosPDAO.class.getName()).log(Level.SEVERE, null, e);

@@ -62,9 +62,14 @@ public class DatosControlador extends HttpServlet {
             //METODOS GENERICOS
             case 1:
                 //vvista dos actualizar registro
-                //Si actualizar SE LOGRO EL LA VISTA MUESTRA CORRECTO 
+                //Si actualizar SE LOGRO EL LA VISTA MUESTRA CORRECTO
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////   
+               // datpVO = datpDAO.consultarId(datId);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////                
                 if (datpDAO.actualizarRegistro()) {
                     request.setAttribute("mensajeExito", "Los datos se actualizaron correctamente");
+                    
+                    //request.setAttribute("mensajeExito", "PASO AL CONTROLADOR");
                     //Si actualizar SE LOGRO EL LA VISTA MUESTRA ERROR 
                 } else {
                     request.setAttribute("mensajeError", "Los datos no se actualizaron correctamente");

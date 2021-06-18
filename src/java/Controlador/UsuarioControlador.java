@@ -92,6 +92,8 @@ public class UsuarioControlador extends HttpServlet {
 
             //METODOS PROPIOS 
             case 3: //vista tres iniciar sesion
+                String idUsuario="";
+                
                 //Si inicio lo envia al menu 
                 if (usuDAO.iniciarSesion(usuLogin, usuPassword)) {
 
@@ -100,7 +102,7 @@ public class UsuarioControlador extends HttpServlet {
                     //variable es httpSesion NOMBRE QUE QUIERAS
                     HttpSession miSesion = request.getSession(true);
                     //se dice que datos quiero manejar
-                    usuVO = new UsuarioVO(usuVO.getUsuId(), usuLogin, usuPassword);
+                    usuVO = new UsuarioVO(usuId, usuLogin, usuPassword);
                     //atraves de la sesion evio un atributo me trae los datos
                     miSesion.setAttribute("datosUsuario", usuVO);
 //......................................................................................................................
@@ -112,14 +114,24 @@ public class UsuarioControlador extends HttpServlet {
                     //evaluemos
                     for (int i = 0; i < listaRol.size(); i++) {
                         usuVO = listaRol.get(i);
+                        idUsuario = usuVO.getUsuId();
                     }
-
+//......................................................................................................................
+                               
+                    //TRABAJAR CON DATOS PERSONLES POR EL ID
+                    DatosPVO datpVO = new DatosPVO();
+                    DatosPDAO datpDAO = new DatosPDAO();
+                    
+                    datpVO=datpDAO.consultarDatos(idUsuario);
+                    miSesion.setAttribute("datosPersonales", datpVO);
+                    
                     miSesion.setAttribute("rol", listaRol);
-
+//......................................................................................................................
+                  
                     if (listaRol.size() > 1) {
                         request.getRequestDispatcher("menu.jsp").forward(request, response);
 
-                    } else if (usuVO.getRol().equals("VENDEDOR")) {
+                    } else if (usuVO.getRol().equals("Vendedor")) {
 
                         request.getRequestDispatcher("vendedor.jsp").forward(request, response);
 

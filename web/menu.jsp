@@ -49,6 +49,7 @@
             <a href="registrarVehiculo.jsp"><input type="submit" value="Registrar Vehiculo" name="Registrar Vehiculo"></a>
             <a href="consultarVehiculo.jsp"><input type="submit" value="Consultar Vehiculo" name="Consultar Vehiculo"></a>
             <a href="consultarDatos.jsp"><input type="submit" value="Consultar Datos" name="Consultar Datos"></a>
+            <a href="editarPerfil.jsp"><input type="submit" value="Editar Perfil" name="Editar Perfil"></a>
             <a href="mas.jsp"><input type="submit" value="Acerca de Nicole" name="Acerca de Nicole"></a>
 
         </div>
