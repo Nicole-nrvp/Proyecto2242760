@@ -85,6 +85,15 @@
                 <%}%>
             </table>
         </form>
+            <br>
+            <br>
+            <br>
+            <form method="post" action="GenerarPDF.jsp" target="_black">
+                
+                <input type="submit" value="Generar Reporte">
+                <input type="hidden" value="ReporteVehiculos.jasper" name="nombreReporte">
+                
+            </form >
         <br>
          <a href="menu.jsp"><input type="submit" value="Volver al Menù" name="Volver al Menù"></a>
     </center>

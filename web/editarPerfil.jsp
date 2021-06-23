@@ -33,7 +33,6 @@
 
         <form method="post" action="Datos">
             ID<br>
-            
             <input type="text" name="textNombre"  value="<%=datpVO.getUsuId()%>">
             <br>
             <br>
