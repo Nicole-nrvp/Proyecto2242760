@@ -94,6 +94,19 @@
                 <input type="hidden" value="ReporteVehiculos.jasper" name="nombreReporte">
                 
             </form >
+            <br>
+            <br>
+            <form method="post" action="GenerarPDFParametrizado.jsp" target="_black">
+                <select name="textEstado">
+                    <option value="NUEVO">NUEVO</option>
+                    <option value="USADO">USADO</option>
+                    
+                </select>
+                
+                <input type="submit" value="Generar Reporte">
+                <input type="hidden" value="ReporteParametrizado.jasper" name="nombreReporte">
+                
+            </form >
         <br>
          <a href="menu.jsp"><input type="submit" value="Volver al Menù" name="Volver al Menù"></a>
     </center>
