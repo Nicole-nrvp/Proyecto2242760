@@ -1,29 +1,134 @@
-*{
-    padding: 2px;
-    margin: 2px;
-    font-family: cursive;
-
-}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27-jun-2021, 14:25:15
+    Author     : Intel
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap');
+* {
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}   
+html,
 body {
-    background-color: #FADBD8;
+    flex-direction: row-reverse;
+    margin: 1px;
+    padding: 1px;
+    font-family: 'Poppins', sans-serif;
 }
-
-button{
+.header{
+    justify-content: center;
     align-items: center;
-    margin: 10px;
-    background-color: #F9EBEA ;
-    opacity: 0.8;
-    width: 150px;
+    background-color: #D7DBDD;
+    width: 100%;
+    height: 10vh;
 }
 
-[type="submit"]{
 
+.main{
+    background-image: url(../Imagenes/carro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     align-items: center;
-    margin: 10px;
-    background-color: #F9EBEA ;
-    opacity: 0.8;
-    width: 150px;
+    width: 100%;
+    height: 77vh;
+
 }
-.tabla{
-    background-color:#F5CBA7  ;   
+.Barraboton{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+    opacity: 0.7;
+    width: 100%;
+    height: 10vh;
+}
+
+.frase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Dancing Script', sans-serif;
+    transition: 0.9s;
+}
+.conteimagen{
+    background-image: url("../Imagenes/Lambo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    margin:40px;
+    height: 50vh;
+
+} 
+.reportes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100 100%;
+    margin:40px;
+    height: 10vh;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D7DBDD;
+    opacity: 0.9;
+    width: 100%;
+    height: 9vh;
+}
+h1{
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Dancing Script', sans-serif;
+}
+h2{
+    font: bold;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Dancing Script', sans-serif;
+}
+h3{
+    color: #18241e;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Dancing Script', sans-serif;
+}
+table{
+    background: #949c9c;
+    opacity: 0.8;
+}
+
+.submit{
+   color:#fff;
+    width: 130px;
+    margin: 40px;
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #464747;
+    opacity: 1,0;
+    transition: 0.9s;
+    font-family: 'Poppins', sans-serif;
+}
+.submit:hover {
+    background: #7c7e7e;
+}
+
+.submit:active {
+    transition: 0.2s;
+    background: #18241e;
+}
+
+@media only screen and ( max-width: 600px) {
+ 
 }

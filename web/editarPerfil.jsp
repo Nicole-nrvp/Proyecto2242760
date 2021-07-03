@@ -7,7 +7,8 @@
 <%@page import="ModeloVO.DatosPVO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="Sesiones.jsp" %>
-<%    if (buscarSesion.getAttribute("datosPersonales") == null) {
+<%    
+    if (buscarSesion.getAttribute("datosPersonales") == null) {
         System.out.println("Error pero entro a datos");
     } else {
 
@@ -27,19 +28,32 @@
         <title>Editar perfil</title>
     </head>
     <body>
+        <div class="contenedor">
+
+            <div class="header">
+                <br>
+                <h2>EDITAR DATOS PERSONALES</h2>
+            </div>
+
+
+            <div class="main">
+                <div class="Barraboton">
+                    <a href="registrarUsuario.jsp"><input class="submit" type="submit" value="Registrar Usuario" name="Registrar Usuario"></a>
+                    <a href="registrarVehiculo.jsp"><input class="submit" type="submit" value="Registrar Vehiculo" name="Registrar Vehiculo"></a>
+                    <a href="consultarVehiculo.jsp"><input class="submit" type="submit" value="Consultar Vehiculo" name="Consultar Vehiculo"></a>
+                    <a href="consultarDatos.jsp"><input class="submit" type="submit" value="Consultar Datos" name="Consultar Datos"></a>
+                    <a href="editarPerfil.jsp"><input class="submit" type="submit" value="Editar Perfil" name="Editar Perfil"></a>
+                    <a href="mas.jsp"><input class="submit" type="submit" value="Acerca de Nicole" name="Acerca de Nicole"></a>
+
+                </div>
+
+
+                
     <center>
-        <h1>Editar Perfil</h1>
-
-
-        <form method="post" action="Datos">
-            ID<br>
-            <input type="text" name="textNombre"  value="<%=datpVO.getUsuId()%>">
+        <form method="post" action="Datos" class="conteR">
             <br>
-            <br>
-            DATID<br>
-            <input type="text" name="textNombre"  value="<%=datpVO.getDatId()%>">
-            <br>
-            <br>
+            <input type="hidden" name="textNombre"  value="<%=datpVO.getUsuId()%>">
+            <input type="hidden" name="textNombre"  value="<%=datpVO.getDatId()%>">
             Nombre<br>
             <input type="text" name="textNombre"  value="<%=Nombre%>">
             <br>
@@ -52,29 +66,36 @@
             <br>
             Correo<br>
             <input type="text" name="textCorreo" value="<%=datpVO.getDatCorreo()%>" ><br>
-            <br>
-            <br>
-            <button>Actualizar Perfil</button>
-            <input type="hidden" value="1" name="opcion">
+            <button class="submit" >Actualizar Perfil</button>
+            <input class="submit" type="hidden" value="1" name="opcion">
 
-        </form>
-
-        <br>
-        <br>
-
-        <a href="menu.jsp"><input type="submit" value="Volver al Menù" name="Volver al Menù"></a>
-
-
-        <%
+            <%
             if (request.getAttribute("mensajeError") != null) {  %>  
 
         ${mensajeError}
 
         <%} else {%>
-        <div style="color: darkseagreen;">${mensajeExito}</div>
+        <div style="color: #18241e;">${mensajeExito}</div>
         <% }%>
 
-    </center>    
+        
+        </form>
+
+        <br>
+        <br>
+
+    </center> 
+        
+         </div>
+        </div>  
+        <div class="footer">
+            <a href="menu.jsp"><input class="submit" type="submit" value="Volver al Menú" name="Volver al Menú"></a>
+                 
+            <h1>Nicole Valentina Romero Polo - </h1>
+            <br>
+            <h2>2242760 - ADSsI</h2>
+
+        </div>
 
 </body>
 </html>

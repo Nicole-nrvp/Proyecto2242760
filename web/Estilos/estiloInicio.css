@@ -1,39 +1,115 @@
-*{
-    padding: 1px;
-    margin: 1px;
-    font-family: cursive;
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27-jun-2021, 17:36:36
+    Author     : Intel
+*/
 
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html,
 body {
-    background-color: #FADBD8;
+    
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-button{
+
+.ContentT{
+    background-color: gray;
+    background-image: url(../Imagenes/carro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
     align-items: center;
-    margin: 10px;
-    background-color: #F9EBEA ;
+    width: 100%;
+    height: 100%;
+    
+}
+.part1 {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #949c9c;
+    width: 350px;
+    height: 400px;
+    flex-wrap: wrap;
+    border-radius: 2%;
     opacity: 0.8;
-    width: 150px;
 }
 
-h1{margin: 1%;}
-
-.conteInicio{
-    padding: 30px;
-    margin: 10%;
-    width: auto;
-    height: auto;
-    background-color:#F5CBA7  ;
-    opacity: 0.9;
-    border: 5px solid #EFF8F9 ;
-    border-radius: 1%;
-
+.txt {
+    margin: 6px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgb(54, 54, 54);
+    outline: none;
+    width: 234px;
+    height: 38px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 16px;
 }
-.mensaje{
-    padding: 10px;
-    margin: 5%;
-    background-color:#FADBD8  ;
-    opacity: 0.9;
-    border: 5px solid #FADBD8 ;
-    border-radius: 1%;
-    color: #BA4A00;
+.span{
+    margin: 10px;
+    color: rgb(0, 0, 0);
 }
+.submit {
+    color:rgb(251, 250, 250);
+    width: 237px;
+    margin: 30px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #464747;
+    opacity: 1,0;
+    transition: 0.9s;
+    font-family: 'Poppins', sans-serif;
+     
+}
+
+.submit:hover {
+    background: #7c7e7e;
+}
+
+.submit:active {
+    transition: 0.2s;
+    background: #18241e;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    
+}
+
+h1 {
+    margin-top: -12px;
+    top: 24%;
+    color: rgb(15, 15, 15);
+}
+
+h2 {
+    font-size: 14px;
+    margin-left: 75px;
+    margin-top: -1px;
+    color: rgb(207, 46, 46);
+    display: none;
+}
+
+
+@media screen and (max-height: 550px) {}

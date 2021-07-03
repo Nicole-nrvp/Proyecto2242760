@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null"  language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="198bd02f-6b51-4857-8488-1917c1fb21b0">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="198bd02f-6b51-4857-8488-1917c1fb21b0">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -88,39 +88,39 @@ FROM
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement style="Column header" x="0" y="0" width="89" height="15" forecolor="#736343" uuid="48f0fe2c-e23c-4acd-9c50-848025d06a2c"/>
+				<reportElement style="Column header" x="0" y="0" width="89" height="15" forecolor="#000000" uuid="48f0fe2c-e23c-4acd-9c50-848025d06a2c"/>
 				<text><![CDATA[PLACA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="89" y="0" width="89" height="15" forecolor="#736343" uuid="7f5fb78f-71c4-4fed-898e-1c8416aa0c17"/>
+				<reportElement style="Column header" x="89" y="0" width="89" height="15" forecolor="#000000" uuid="7f5fb78f-71c4-4fed-898e-1c8416aa0c17"/>
 				<text><![CDATA[MODELO]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="178" y="0" width="89" height="15" forecolor="#736343" uuid="9ef8c2ee-4a17-4b9d-9c98-d1eb06838b3d"/>
+				<reportElement style="Column header" x="178" y="0" width="89" height="15" forecolor="#000000" uuid="9ef8c2ee-4a17-4b9d-9c98-d1eb06838b3d"/>
 				<text><![CDATA[MARCA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="267" y="0" width="89" height="15" forecolor="#736343" uuid="5844ac74-74e9-4236-be38-5c40511cb036"/>
+				<reportElement style="Column header" x="267" y="0" width="89" height="15" forecolor="#000000" uuid="5844ac74-74e9-4236-be38-5c40511cb036"/>
 				<text><![CDATA[ESTADO]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="356" y="0" width="89" height="15" forecolor="#736343" uuid="26181c76-1c11-4239-b3a1-07ee6ea56d35"/>
+				<reportElement style="Column header" x="356" y="0" width="89" height="15" forecolor="#000000" uuid="26181c76-1c11-4239-b3a1-07ee6ea56d35"/>
 				<text><![CDATA[PRECIO]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="445" y="0" width="89" height="15" forecolor="#736343" uuid="551c9126-c7b3-4df0-bd35-d9ef97f4fcb9"/>
+				<reportElement style="Column header" x="445" y="0" width="89" height="15" forecolor="#000000" uuid="551c9126-c7b3-4df0-bd35-d9ef97f4fcb9"/>
 				<text><![CDATA[CATEGORIA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="534" y="0" width="89" height="15" forecolor="#736343" uuid="29a7abfb-335f-42b0-8f1c-ce93eab3deab"/>
+				<reportElement style="Column header" x="534" y="0" width="89" height="15" forecolor="#000000" uuid="29a7abfb-335f-42b0-8f1c-ce93eab3deab"/>
 				<text><![CDATA[NOMBRE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="623" y="0" width="89" height="15" forecolor="#736343" uuid="a43bec0e-8ea1-4611-ab77-ad793f26dfe9"/>
+				<reportElement style="Column header" x="623" y="0" width="89" height="15" forecolor="#000000" uuid="a43bec0e-8ea1-4611-ab77-ad793f26dfe9"/>
 				<text><![CDATA[CONTACTO]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="712" y="0" width="89" height="15" forecolor="#736343" uuid="6b6ae538-f535-4c83-a8d4-027baf1be54b"/>
+				<reportElement style="Column header" x="712" y="0" width="89" height="15" forecolor="#000000" uuid="6b6ae538-f535-4c83-a8d4-027baf1be54b"/>
 				<text><![CDATA[CORREO]]></text>
 			</staticText>
 		</band>
@@ -181,7 +181,7 @@ FROM
 	<pageFooter>
 		<band height="25" splitType="Stretch">
 			<frame>
-				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="6197e36a-5c96-4e06-b547-4b6bf8ffcc3a"/>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="6197e36a-5c96-4e06-b547-4b6bf8ffcc3a"/>
 				<textField evaluationTime="Report">
 					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="a5ed8ce3-b89e-4c2b-8777-cc1e7cb55671"/>
 					<textElement verticalAlignment="Middle">
@@ -197,7 +197,7 @@ FROM
 					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
 				</textField>
 				<textField pattern="EEEEE dd MMMMM yyyy">
-					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="50c6f70f-bfd3-44ac-94dc-2e040c083da1"/>
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#000000" uuid="50c6f70f-bfd3-44ac-94dc-2e040c083da1"/>
 					<textElement verticalAlignment="Middle">
 						<font size="10" isBold="false"/>
 					</textElement>

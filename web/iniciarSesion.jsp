@@ -14,43 +14,51 @@
         <link href="Estilos/estiloInicio.css" rel="stylesheet" type="text/css"/>
         <title>Inicio de Sesion</title>
     </head>
+
     <body>
+
+        <form id="login" class="input-group-login" method="post" action="Usuario">
+
+            <div class="ContentT">
+                <div class="part1">
+                    <div class="login">
+                        <h1>Login</h1>
+                        <input type="text"  class="txt" placeholder="Ingresar Usuario" name="textUsuario" required>
+                        <input type="password"  class="txt" placeholder="Ingresar Clave" name="textClave" required>
+
+
+                        <button class="submit" class="submit-btn">Ingresar</button>
+                        <input type="hidden" value="3" name="opcion">
+
+                        <span class="span"><input type="checkbox" class="check-box">terminos y condiciones</span>
+
+                        <input type="hidden" id="opcion" name="opcion" value="1">
+
+                        <h2 id="Error"></h2>
+
+                        <h2 id="Error"></h2>
+
+                        <div class="part2"> </div>
+
+
+
+                        </form>
     <center>
+                        <div class="mensaje">
 
-        <h1>INICIO DE SESION</h1>
+                            <%
+                if (request.getAttribute("mensajeError") != null) {  %>  
 
-        <form method="post" action="Usuario" class="conteInicio">
-            <table>
-                <tr>
-                    Usuario<br>
-                <input type="text" name="textUsuario"><br>
-                <br>
-                Contraseña<br>
-                <input type="password" name="textClave"><br>
-                <br>
-                </tr>
-            </table>
-            <img src="Imagenes/login.jpg" alt=""/>
-            <br>
-            <button>Ingresar</button>
-            <input type="hidden" value="3" name="opcion">
-            <br>
-            <a href="Intro.jsp"><input type="submit" value="Volver Pag Principal" name="Volver Pag Principal"></a>
+                            ${mensajeError}
+                            <%} else {%>
+                            <div style="color: red;">${mensajeExito}</div>
+                            <% }%>
 
-        </form>
-        <div class="mensaje">
 
-            <center>
-                <%
-                    if (request.getAttribute("mensajeError") != null) {  %>  
-
-                ${mensajeError}
-                <%} else {%>
-                <div style="color: darkseagreen;">${mensajeExito}</div>
-                <% }%>
-            </center>
+                        </div
     </center>
-
-</div>
-</body>
+                    </div>
+                </div>
+            </div>
+    </body>
 </html>

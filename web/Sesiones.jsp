@@ -50,41 +50,11 @@
     </head>
     <body>
         <div style=" float: right;">
+            <br>
             <h1 style="color: black;">Bienvenido/a:  <%=datpVO.getDatNombre() + " " + datpVO.getDatApellido()%></h1>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+           
             <form method="post" action="Sesiones">
-                <a href="iniciarSesion.jsp"><input type="submit" value="Cerrar Sesion" name="Cerrar Sesiòn"></a>
+                <a href="iniciarSesion.jsp"><input type="submit" value="Cerrar Sesión" name="Cerrar Sesión"></a>
             </form>
         </div>
     </body>

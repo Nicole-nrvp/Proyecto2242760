@@ -96,8 +96,7 @@ public class VehiculoDAO extends Conexión implements Crud{
     public boolean actualizarRegistro() {
 try {
     
-//UPDATE vehiculo SET VEHMODELO=2030, VEHMARCA='TOYOTA', VEHESTADO='NUEVO', VEHPRECIO= 1000000 WHERE VEHPLACA='WWW123'
-            
+            //UPDATE `cliente` SET `CLI_APELLIDO` = 'ELITEEE' WHERE `cliente`.`CLI_ID` = 1;
             sql="update vehiculo set DATID=?, CATID=?, VEHMODELO=?, VEHMARCA=?, VEHESTADO=?, VEHPRECIO=? where VEHPLACA=?";
             //crear un puente para la conexion y envia la setencia sql 
             puente = conexion.prepareStatement(sql);
